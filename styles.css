@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("JetBrainsMono-VariableFont_wght.ttf");
+  font-style: Mono;
+}
+
+* {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#container {
+  border: 1px solid rgba(28, 110, 164, 0.22);
+  width: 500px;
+  height: 200px;
+  background-color: skyblue;
+  display: flex;
+  text-align: center;
+  margin: 100px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  box-shadow: 10px 9px 5px -6px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 10px 9px 5px -6px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 10px 9px 5px -6px rgba(0, 0, 0, 0.48);
+}
+
+.flex {
+  box-shadow: 10px 9px 5px -6px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 10px 9px 5px -6px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 10px 9px 5px -6px rgba(0, 0, 0, 0.48);
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  border: none;
+  background-color: aquamarine;
+  width: 100px;
+  height: 50px;
+  flex-grow: 0.4;
+  order: 2;
+  -webkit-border-radius: 40px 0px 40px 0px;
+  -moz-border-radius: 40px 0px 40px 0px;
+  border-radius: 40px 0px 40px 0px;
+  user-select: none;
+}
+
+.flex:focus {
+  outline: none;
+  -webkit-border-radius: 40px 0px 40px 0px;
+  -moz-border-radius: 40px 0px 40px 0px;
+  border-radius: 40px 0px 40px 0px;
+  box-shadow: 0 0 0 2pt rgba(0, 0, 0, 0.48);
+}
+
+.button {
+  margin: 100px;
+}
+
+.item {
+  order: 1;
+}
